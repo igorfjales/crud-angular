@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="content">
+
+  <mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form>
+
+      <mat-form-field>
+        <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="cpf" autocomplete="off" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Nome" [(ngModel)]="client.name" name="name" autocomplete="off" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Celular" [(ngModel)]="client.phone" name="phone" autocomplete="off" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email" autocomplete="off" required>
+      </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="createClient()" color="primary">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+      Cancelar
+    </button>
+  </mat-card>
+
+</div>
+
+<app-nav></app-nav>

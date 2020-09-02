@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-title class="popup-title">
+    Detalhes do Cliente
+
+    <mat-slide-toggle [(ngModel)]="statusEdit" color="primary">
+      Editar
+    </mat-slide-toggle>
+  </mat-card-title>
+  <form>
+
+    <mat-form-field>
+      <input matInput placeholder="CPF" name="cpf" [(ngModel)]="client.cpf" [disabled]="!statusEdit"
+        autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Nome" [(ngModel)]="client.name" name="name" [disabled]="!statusEdit"
+        autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Celular" [(ngModel)]="client.phone" name="phone" [disabled]="!statusEdit"
+        autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="E-mail" [(ngModel)]="client.email" name="email" [disabled]="!statusEdit"
+        autocomplete="off">
+    </mat-form-field>
+
+  </form>
+
+  <button mat-raised-button color="primary" [disabled]="!statusEdit" (click)="updateClient()">
+    Atualizar
+  </button>
+
+  <button mat-raised-button (click)="closeDialog()">
+    Fechar
+  </button>
+</mat-card>

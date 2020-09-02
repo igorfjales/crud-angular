@@ -1,0 +1,23 @@
+<mat-toolbar class="header mat-elevation-z4">
+  <span>
+    <a routerLink="/home">
+      <img class="logo" src="assets/img/jls-logo.png" alt="logo" />
+    </a>
+  </span>
+  <span class="title-group">
+    <a routerLink="/home">
+      <i class="material-icons">
+        {{ icon }}
+      </i>
+      {{ title }}
+    </a>
+  </span>
+
+  <span class="logout">
+    <a routerLink="/">
+      <i class="material-icons">
+        power_settings_new
+      </i>
+    </a>
+  </span>
+</mat-toolbar>

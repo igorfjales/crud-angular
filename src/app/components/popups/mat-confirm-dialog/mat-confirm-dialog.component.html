@@ -1,0 +1,12 @@
+<div>
+  <div class="content-container">
+    <mat-icon id="close-icon" (click)="closeDialog()">close</mat-icon>
+    <div class="teste">
+      <span class="content-span full-width">{{ data.message }}</span>
+      <input matInput [(ngModel)]="cpfConfirmation" placeholder="Digite o CPF para confirmar." autocomplete="off">
+    </div>
+  </div>
+
+  <button mat-flat-button id="no-button" [mat-dialog-close]="false">Não</button>
+  <button mat-flat-button id="yes-button" [mat-dialog-close]="cpfConfirmation">Sim</button>
+</div>
