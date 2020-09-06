@@ -1,3 +1,9 @@
+.content {
+  margin-top: 0.1%;
+  margin-left: 0.1%;
+  width: 98%;
+}
+
 .home .title {
   font-size: 2rem;
   font-weight: 300;
