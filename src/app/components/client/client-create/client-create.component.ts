@@ -27,7 +27,7 @@ export class ClientCreateComponent implements OnInit {
       this.client.phone === "" ||
       this.client.email === ""
     ) {
-      this.clientService.showMessage("Preencher todos os campos obrigatórios!");
+      this.clientService.showMessage("Preencher todos os campos obrigatórios!", true);
       return;
     }
     this.clientService.create(this.client).subscribe(() => {
