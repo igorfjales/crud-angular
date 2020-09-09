@@ -1,0 +1,21 @@
+<form action="" class="form">
+  <mat-form-field>
+    <input matInput placeholder="Nome Completo" name="name" [(ngModel)]="user.name" autocomplete="off" />
+    <mat-icon matSuffix>account_circle</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="E-mail" name="email" [(ngModel)]="user.email" autocomplete="off" />
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Senha" type="password" name="password" [(ngModel)]="user.password"
+      autocomplete="off" />
+    <mat-icon matSuffix>lock</mat-icon>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="createUser()" class="register-button">
+    Registrar
+  </button>
+</form>

@@ -1,0 +1,17 @@
+mat-card {
+  width: 30%;
+  margin: 10% auto;
+  border-radius: 8px;
+}
+mat-form-field {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.login-button {
+  margin-top: 20px;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}

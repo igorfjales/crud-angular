@@ -26,7 +26,7 @@ import { MatDialogModule } from "@angular/material/dialog";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 
 // VIEWS
-import { RegisterUserComponent } from "./views/register-user/register-user.component";
+import { AuthenticationComponent } from "./views/authentication/authentication.component";
 import { HomeComponent } from "./views/home/home.component";
 import { ClientCrudComponent } from "./views/client-crud/client-crud.component";
 
@@ -36,18 +36,19 @@ import { NavComponent } from "./components/template/nav/nav.component";
 import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ClientCreateComponent } from "./components/client/client-create/client-create.component";
 import { ClientReadComponent } from "./components/client/client-read/client-read.component";
+import { UserCreateComponent } from "./components/user/user-create/user-create.component";
+import { UserLoginComponent } from "./components/user/user-login/user-login.component";
 
 // POPUPS
 import { MatConfirmDialogComponent } from "./components/popups/mat-confirm-dialog/mat-confirm-dialog.component";
-import { PopupDetailClientComponent } from './components/popups/popup-detail-client/popup-detail-client.component';
+import { PopupDetailClientComponent } from "./components/popups/popup-detail-client/popup-detail-client.component";
 
 // PIPES
-import { FirstNamePipe } from './components/client/first-name.pipe';
+import { FirstNamePipe } from "./components/client/first-name.pipe";
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterUserComponent,
     HeaderComponent,
     NavComponent,
     HomeComponent,
@@ -58,6 +59,9 @@ import { FirstNamePipe } from './components/client/first-name.pipe';
     MatConfirmDialogComponent,
     PopupDetailClientComponent,
     FirstNamePipe,
+    UserCreateComponent,
+    UserLoginComponent,
+    AuthenticationComponent,
   ],
   imports: [
     BrowserModule,

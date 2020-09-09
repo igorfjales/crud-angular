@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { RegisterUserComponent } from "./views/register-user/register-user.component";
+import { AuthenticationComponent } from "./views/authentication/authentication.component";
 import { HomeComponent } from "./views/home/home.component";
 import { ClientCrudComponent } from "./views/client-crud/client-crud.component";
 
@@ -10,7 +10,7 @@ import { ClientCreateComponent } from "./components/client/client-create/client-
 const routes: Routes = [
   {
     path: "",
-    component: RegisterUserComponent,
+    component: AuthenticationComponent,
   },
   {
     path: "home",
