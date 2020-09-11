@@ -1,21 +1,41 @@
 <form action="">
-
   <mat-form-field>
-    <input matInput placeholder="E-mail" required name="email" ngModel #email="ngModel" autocomplete="off" />
+    <input
+      matInput
+      placeholder="E-mail"
+      required
+      name="email"
+      [(ngModel)]="user.email"
+      #email="ngModel"
+      autocomplete="off"
+    />
     <mat-error *ngIf="email.invalid">E-mail é obrigatório.</mat-error>
     <mat-icon matSuffix>email</mat-icon>
   </mat-form-field>
 
   <mat-form-field>
-    <input matInput placeholder="Senha" type="password" required minlength="6" name="password" ngModel
-      #password="ngModel" />
+    <input
+      matInput
+      placeholder="Senha"
+      type="password"
+      [(ngModel)]="user.password"
+      required
+      minlength="6"
+      name="password"
+      #password="ngModel"
+    />
     <mat-error *ngIf="password.errors && password.errors.required">
       Senha é obrigatória.
     </mat-error>
     <mat-icon matSuffix>lock</mat-icon>
   </mat-form-field>
 
-  <button (click)="login()" mat-raised-button color="primary" class="login-button">
+  <button
+    (click)="login()"
+    mat-raised-button
+    color="primary"
+    class="login-button"
+  >
     Entrar
   </button>
 </form>

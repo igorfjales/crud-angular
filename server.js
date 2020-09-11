@@ -10,5 +10,5 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(PORT, () => [
-  console.log(console.log("Servidor iniciado na porta" + PORT)),
+  console.log(console.log("Servidor iniciado na porta " + PORT)),
 ]);
