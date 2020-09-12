@@ -46,6 +46,12 @@ import { PopupDetailClientComponent } from "./components/popups/popup-detail-cli
 // PIPES
 import { FirstNamePipe } from "./components/client/first-name.pipe";
 
+import { NgxMaskModule, IConfig } from "ngx-mask";
+
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,6 +92,7 @@ import { FirstNamePipe } from "./components/client/first-name.pipe";
     ReactiveFormsModule,
     MatDialogModule,
     MatSlideToggleModule,
+    NgxMaskModule.forRoot(maskConfig),
   ],
   providers: [],
   bootstrap: [AppComponent],
