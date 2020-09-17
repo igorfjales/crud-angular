@@ -29,6 +29,8 @@ export class UserLoginComponent implements OnInit {
 
     this.userService.readByEmail(this.user.email).subscribe((response) => {
       if (response[0] && response[0].password === this.user.password) {
+        window.localStorage.setItem("token", "meu-token");
+
         this.userService.showMessage("Usuário logado com sucesso!");
         this.router.navigate(["/home"]);
       } else {
