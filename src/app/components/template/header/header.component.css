@@ -14,7 +14,7 @@ header .container{
 header img {
   margin-left: 20px;
   padding: 14px 0px;
-  max-height: 30px;
+  max-height: 31px;
 }
 
 header a {
@@ -23,6 +23,7 @@ header a {
 }
 
 header .logout {
+  cursor: pointer;
   position: absolute;
   left: 96%;
   transition: 0.3s;
